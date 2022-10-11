@@ -1,15 +1,16 @@
 .heading {
     width: 100%;
-    margin: 20px 0;
+    padding: 20px 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    background-color: rgb(241, 180, 65);
+
 }
 
-.image {
-    width: 150px;
-    height: 150px;
+.heading-image {
+    width: 250px;
+    height: 250px;
     border-radius: 10px;
-    margin-right: 30px;
 }
 
 .heading div {
@@ -17,7 +18,17 @@
 }
 
 .topic-section {
-    margin: 200px 0;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr;
+}
+
+.topic-section-image {
+    width: 100%;
+}
+
+.topic-body {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
 }

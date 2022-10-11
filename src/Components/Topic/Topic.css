@@ -2,12 +2,14 @@
     border: 1px solid black;
     border-radius: 10px;
     width: fit-content;
-    padding: 5px;
+    padding: 8px;
+    background-color: white;
 }
 
 .logo {
     width: 200px;
     height: 200px;
+    background-color: rgb(197, 224, 233);
 }
 
 .description {
@@ -15,6 +17,10 @@
     justify-content: space-between;
     align-items: center;
     margin: 5px 0;
+}
+
+.zero-margin {
+    margin: 0;
 }
 
 .btn-start {

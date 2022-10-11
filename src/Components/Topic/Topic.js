@@ -10,8 +10,8 @@ const Topic = ({ topic }) => {
             <img className='logo' src={topic.logo} alt="" />
             <div className='description'>
                 <div>
-                    <h5>{topic.name}</h5>
-                    <p><small>Quantity: {topic.total}</small></p>
+                    <h5 className='zero-margin'>{topic.name}</h5>
+                    <p className='zero-margin'><small>Quantity: {topic.total}</small></p>
                 </div>
                 <button className='btn-start'>Start <FontAwesomeIcon icon={faArrowRight} /></button>
             </div>
