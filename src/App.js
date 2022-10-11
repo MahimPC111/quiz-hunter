@@ -1,6 +1,8 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import Blog from './Components/Blog/Blog';
 import Home from './Components/Home/Home';
+import Statistics from './Components/Statistics/Statistics';
 import Main from './layout/Main';
 
 function App() {
@@ -12,8 +14,20 @@ function App() {
         {
           path: '/',
           element: <Home></Home>
+        },
+        {
+          path: '/statistics',
+          element: <Statistics></Statistics>
+        },
+        {
+          path: '/blog',
+          element: <Blog></Blog>
         }
       ]
+    },
+    {
+      path: '*',
+      element: <div>404, Not found</div>
     }
   ])
   return (

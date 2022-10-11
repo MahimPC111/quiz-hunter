@@ -1,0 +1,16 @@
+.title {
+    font-size: 28px;
+}
+
+.link {
+    text-decoration: none;
+    margin-left: 20px;
+    color: yellow;
+}
+
+@media only screen and (max-width: 600px) {
+    .link {
+        margin-left: 0;
+        margin-bottom: 5px;
+    }
+}
