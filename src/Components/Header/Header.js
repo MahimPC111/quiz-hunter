@@ -6,10 +6,7 @@ import './Header.css'
 const Header = () => {
     return (
         <div>
-            {/* <h1>This is header</h1> */}
-            {/* <Link to='/'>Home</Link>
-            <Link to='/statistics'>Statistics</Link> */}
-            <Navbar bg="dark" variant="dark" expand="lg">
+            <Navbar bg="dark" variant="dark" expand="sm">
                 <Container>
                     <Navbar.Brand className='title'>Quiz Hunter</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
