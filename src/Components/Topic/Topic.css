@@ -1,9 +1,9 @@
 .topic {
-    border: 1px solid black;
     border-radius: 10px;
     width: fit-content;
     padding: 8px;
     background-color: white;
+    margin: 0 auto;
 }
 
 .logo {
@@ -16,7 +16,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 5px 0;
 }
 
 .zero-margin {
@@ -26,5 +25,6 @@
 .btn-start {
     border: none;
     border-radius: 5px;
+    padding: 5px 15px;
     background-color: indianred;
 }

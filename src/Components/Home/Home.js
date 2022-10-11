@@ -11,15 +11,17 @@ const Home = () => {
     return (
         <div>
             <div className='heading'>
-                <img src={img} className='heading-image' alt="" />
-                <div>
+                <div className='heading-image'>
+                    <img src={img} alt="" />
+                </div>
+                <div className='heading-title'>
                     <h1>Explore your Quiz skill!!</h1>
                     <p>When you’re playing quiz you have to keep your mind on what you are doing. <br />This means that quizzes do help to concentrate.</p>
                 </div>
             </div>
             <div className='topic-section'>
                 <div>
-                    <img src={img2} className='topic-section-image' alt="" />
+                    <img src={img2} className='topic-image' alt="" />
                 </div>
                 <div className='topic-body'>
                     {
