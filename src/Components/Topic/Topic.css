@@ -23,6 +23,8 @@
 }
 
 .btn-start {
+    text-decoration: none;
+    color: black;
     border: none;
     border-radius: 5px;
     padding: 5px 15px;
