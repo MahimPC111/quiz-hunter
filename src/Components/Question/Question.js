@@ -3,7 +3,7 @@ import Option from '../Option/Option';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye } from '@fortawesome/free-solid-svg-icons'
 
-const Question = ({ qstn, notify }) => {
+const Question = ({ qstn, notify, handleClick }) => {
 
     const { question, options, correctAnswer } = qstn;
 
@@ -16,7 +16,7 @@ const Question = ({ qstn, notify }) => {
             <h3 className='quiz-question'>Question: {question}</h3>
             <div className='option-section'>
                 {
-                    options.map((option, idx) => <Option key={idx} option={option} correctAnswer={correctAnswer}></Option>)
+                    options.map((option, idx) => <Option key={idx} option={option} correctAnswer={correctAnswer} handleClick={handleClick}></Option>)
                 }
             </div>
         </div>

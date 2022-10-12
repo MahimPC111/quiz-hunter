@@ -11,6 +11,14 @@ const Quizzes = () => {
 
     const notify = (correctAnswer) => toast(`${correctAnswer}`);
 
+    const handleClick = (correctAnswer, option) => {
+        if (correctAnswer === option) {
+            toast('Right answer!!');
+        }
+        else {
+            toast('Wrong answer!!')
+        }
+    };
 
     return (
         <div className='quizzes'>
@@ -18,7 +26,7 @@ const Quizzes = () => {
             <div className='quiz-section'>
                 <ToastContainer autoClose={1500} />
                 {
-                    questions.map(qstn => <Question key={qstn.id} qstn={qstn} notify={notify}></Question>)
+                    questions.map(qstn => <Question key={qstn.id} qstn={qstn} notify={notify} handleClick={handleClick}></Question>)
                 }
             </div>
         </div>
