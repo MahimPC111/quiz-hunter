@@ -11,11 +11,12 @@ const Quizzes = () => {
 
     const notify = (correctAnswer) => toast(`${correctAnswer}`);
 
+
     return (
         <div className='quizzes'>
             <h2>Quiz of {name}</h2>
             <div className='quiz-section'>
-                <ToastContainer />
+                <ToastContainer autoClose={1500} />
                 {
                     questions.map(qstn => <Question key={qstn.id} qstn={qstn} notify={notify}></Question>)
                 }

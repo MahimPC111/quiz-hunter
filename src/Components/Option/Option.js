@@ -8,15 +8,18 @@ const Option = ({ option, correctAnswer }) => {
     const handleClick = (option) => {
         if (correctAnswer === option) {
             toast('Right answer!!');
+
         }
         else {
-            toast('Wrong answer!!')
+            toast('Wrong answer!!');
         }
     };
 
+
+
     return (
         <div>
-            <ToastContainer />
+            <ToastContainer autoClose={1500} />
             <button onClick={() => handleClick(option)} className='option'>{option}</button>
         </div>
     );

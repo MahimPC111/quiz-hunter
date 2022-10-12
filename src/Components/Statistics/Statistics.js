@@ -8,7 +8,7 @@ const Statistics = () => {
     const data = topics.data;
     return (
         <div>
-            <h1 className='chart-title'>Quiz Graph</h1>
+            <h2 className='chart-title'>Quiz Graph</h2>
             <div className='chart'>
                 <ResponsiveContainer width='90%' height={400}>
                     <LineChart data={data}>

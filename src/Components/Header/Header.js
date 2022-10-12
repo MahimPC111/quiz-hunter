@@ -7,13 +7,13 @@ const Header = () => {
         <div>
             <Navbar bg="dark" variant="dark" expand="sm">
                 <Container>
-                    <Navbar.Brand className='fs-2'>Quiz Hunter</Navbar.Brand>
+                    <Navbar.Brand className='fs-2 fw-semibold'>Quiz Hunter</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id='basic-navbar-nav' className="justify-content-end">
                         <Nav>
-                            <Link className='text-warning text-decoration-none' to="/">Home</Link>
-                            <Link className='text-warning text-decoration-none ms-sm-4' to="/statistics">Statistics</Link>
-                            <Link className='text-warning text-decoration-none ms-sm-4' to="/blog">Blog</Link>
+                            <Link className='text-warning text-decoration-none my-1' to="/">Home</Link>
+                            <Link className='text-warning text-decoration-none my-1 ms-sm-4' to="/statistics">Statistics</Link>
+                            <Link className='text-warning text-decoration-none my-1 ms-sm-4' to="/blog">Blog</Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
