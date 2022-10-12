@@ -1,23 +1,23 @@
-import React, { useState } from 'react';
 import './Option.css'
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Option = ({ option, correctAnswer }) => {
 
-    const [isActive, setIsActive] = useState(false);
-
-    const handleClick = () => {
-        setIsActive(current => !current)
+    const handleClick = (option) => {
+        if (correctAnswer === option) {
+            toast('Right answer!!');
+        }
+        else {
+            toast('Wrong answer!!')
+        }
     };
 
-    // console.log(correctAnswer)
     return (
         <div>
-            <button style={{
-                backgroundColor: isActive ? 'burlywood' : undefined
-            }}
-                onClick={handleClick} className='option'>{option}</button>
+            <ToastContainer />
+            <button onClick={() => handleClick(option)} className='option'>{option}</button>
         </div>
     );
 };

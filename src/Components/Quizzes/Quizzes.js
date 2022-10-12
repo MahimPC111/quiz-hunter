@@ -2,6 +2,7 @@ import { useLoaderData } from 'react-router-dom';
 import Question from '../Question/Question';
 import './Quizzes.css'
 import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Quizzes = () => {
     const quizzes = useLoaderData();

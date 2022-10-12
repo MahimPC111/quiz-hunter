@@ -37,7 +37,10 @@ function App() {
     },
     {
       path: '*',
-      element: <div>404, Not found</div>
+      element: <div className='error'>
+        <h3>404, Page not found</h3>
+        <h5>May be you have put something invalid location in the search bar. Please go back and try again!</h5>
+      </div>
     }
   ])
 

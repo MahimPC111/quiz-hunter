@@ -1,6 +1,5 @@
 import './Question.css'
 import Option from '../Option/Option';
-import 'react-toastify/dist/ReactToastify.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye } from '@fortawesome/free-solid-svg-icons'
 
