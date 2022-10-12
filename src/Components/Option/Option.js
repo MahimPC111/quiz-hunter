@@ -1,10 +1,11 @@
 import React from 'react';
+import './Option.css'
 
 const Option = ({ option }) => {
     // console.log(option)
     return (
         <div>
-            <p>{option}</p>
+            <p className='option'>{option}</p>
         </div>
     );
 };

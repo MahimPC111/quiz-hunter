@@ -1,6 +1,7 @@
 .quizzes {
-    background-color: lightgreen;
+    background-color: rgb(188, 245, 188);
     padding-top: 50px;
+    padding-bottom: 30px;
 }
 
 .quizzes h2 {
@@ -10,4 +11,24 @@
 .quiz-section {
     width: 800px;
     margin: 30px auto 0 auto;
+}
+
+
+/* For small device  */
+
+@media only screen and (max-width: 600px) {
+    .quiz-section {
+        width: 300px;
+        margin: 20px auto 0 auto;
+    }
+}
+
+
+/* For medium device  */
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    .quiz-section {
+        width: 600px;
+        margin: 30px auto 0 auto;
+    }
 }

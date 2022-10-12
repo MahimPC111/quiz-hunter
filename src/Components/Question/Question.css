@@ -1,15 +1,46 @@
 .quiz {
-    border: 2px solid black;
+    border-radius: 10px;
     margin-top: 40px;
+    background-color: rgb(156, 243, 156);
+    padding: 20px;
+    box-shadow: 0 0 10px rgb(155, 153, 153);
 }
 
 .quiz-question {
-    margin: 30px 60px;
+    margin: 30px 80px;
     font-weight: bold;
 }
 
 .option-section {
     display: grid;
+    gap: 10px;
     grid-template-columns: repeat(2, 1fr);
-    margin: 10px 30px;
+    justify-items: center;
+}
+
+
+/* For small device  */
+
+@media only screen and (max-width: 600px) {
+    .quiz {
+        margin-top: 25px;
+        padding: 15px;
+    }
+
+    .quiz-question {
+        margin: 20px;
+    }
+
+    .option-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+/* For medium device  */
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    .quiz-question {
+        margin: 20px 50px;
+    }
 }

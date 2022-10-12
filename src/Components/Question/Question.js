@@ -13,7 +13,6 @@ const Question = ({ qstn }) => {
                     options.map((option, idx) => <Option key={idx} option={option}></Option>)
                 }
             </div>
-            <p>{correctAnswer}</p>
         </div>
     );
 };
