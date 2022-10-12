@@ -1,6 +1,7 @@
 .option {
     width: 300px;
     height: 100px;
+    background-color: lightblue;
     border: 2px solid dodgerblue;
     border-radius: 10px;
     font-weight: 500;

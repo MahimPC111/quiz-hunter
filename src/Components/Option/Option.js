@@ -1,11 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Option.css'
 
-const Option = ({ option }) => {
-    // console.log(option)
+
+
+const Option = ({ option, correctAnswer }) => {
+
+    const [isActive, setIsActive] = useState(false);
+
+    const handleClick = () => {
+        setIsActive(current => !current)
+    };
+
+    // console.log(correctAnswer)
     return (
         <div>
-            <p className='option'>{option}</p>
+            <button style={{
+                backgroundColor: isActive ? 'burlywood' : undefined
+            }}
+                onClick={handleClick} className='option'>{option}</button>
         </div>
     );
 };

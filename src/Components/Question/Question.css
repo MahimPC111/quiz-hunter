@@ -6,6 +6,12 @@
     box-shadow: 0 0 10px rgb(155, 153, 153);
 }
 
+.eye-icon {
+    display: flex;
+    justify-content: flex-end
+}
+
+
 .quiz-question {
     margin: 30px 80px;
     font-weight: bold;
