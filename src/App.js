@@ -24,19 +24,19 @@ function App() {
         {
           path: '/blog',
           element: <Blog></Blog>
+        },
+        {
+          path: '/quiz/:id',
+          loader: async ({ params }) => {
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
+          },
+          element: <Quiz></Quiz>
         }
       ]
     },
     {
       path: '*',
       element: <div>404, Not found</div>
-    },
-    {
-      path: '/quiz/:id',
-      loader: async ({ params }) => {
-        return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
-      },
-      element: <Quiz></Quiz>
     }
   ])
   return (

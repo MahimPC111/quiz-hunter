@@ -1,0 +1,13 @@
+.quizzes {
+    background-color: lightgreen;
+    padding-top: 50px;
+}
+
+.quizzes h2 {
+    text-align: center;
+}
+
+.quiz-section {
+    width: 800px;
+    margin: 30px auto 0 auto;
+}
