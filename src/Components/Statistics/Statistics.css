@@ -1,0 +1,10 @@
+.chart-title {
+    text-align: center;
+    margin: 0;
+}
+
+.chart {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}

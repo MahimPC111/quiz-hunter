@@ -19,6 +19,7 @@ function App() {
         },
         {
           path: '/statistics',
+          loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
           element: <Statistics></Statistics>
         },
         {
@@ -39,8 +40,9 @@ function App() {
       element: <div>404, Not found</div>
     }
   ])
+
   return (
-    <div className='bg'>
+    <div>
       <RouterProvider router={router}>
 
       </RouterProvider>
